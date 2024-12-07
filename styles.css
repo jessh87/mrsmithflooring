@@ -1,0 +1,217 @@
+/* 
+   Mr. Smith Flooring & More style sheet 
+   Filename: styles.css
+
+   Author:   Jessica Haynes
+   Date:     11/30/2024
+   HTML5 and CSS3 Illustrated Independent Project 4
+ */
+
+/* reset styles */
+html {
+   font-size: 16px;
+}
+a, article, audio, body, div, figcaption, figure, footer, header, h1, 
+h2, h3, img, li, nav, p, section, source, ul, video {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+img, video {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+ul {
+   list-style-type: none;
+}
+/* body and page container */
+body {
+   background-color: #8B8000;
+}
+/* document-wide styles */
+body {
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+}
+p {
+   line-height: 1.4em;
+   font-size: 1.3em;
+}
+a:link {
+   color: black;
+}
+a:visited {
+   color: #888;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   color: ivory;
+   background-color: #82BAC6;
+   top: 0.4em;
+   left: auto;
+   right: 0.4em;
+   z-index: 2;
+}
+
+/* header section */
+h1 {
+   text-align: right;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 900;
+   color: black;
+   background-color: #8B8000;
+   font-size: 3.4em;
+}
+
+/* site navigation bar */
+nav.sitenavigation {
+   color: #8B8000;
+   text-align: center;
+   background-color: #ADD8E6;
+}
+nav.sitenavigation li {
+   margin: 0.3em 0.5em;
+   display: inline-block;
+   font-size: 1.3em;
+   line-height: 1.4em;
+}
+nav.sitenavigation a:link {
+   text-decoration: none;
+   color: #8B8000;
+}
+nav.sitenavigation a:visited {
+   color: #8B8000;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: ivory;
+}
+
+/* main content */
+article {
+   margin: 0 auto;
+   padding: 1.4em;
+   background: #7eccec;
+   background: url("C:\Users\Jess\Desktop\JessicaHaynesIndependentProjectSubmission 4\floor.jpg");
+}
+article div {
+   max-width: 854px;
+   margin: 0 auto;
+   padding: 0 3% 1em;
+   background-color: #ADD8E6;
+   overflow: auto;
+}
+h2 {
+   padding: 0.4em 0.4em 0;
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-size: 2em;
+   font-weight: 700;
+}
+h3 {
+   margin: 1.4em 0 0;
+   font-size: 1.6em;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 700;
+   clear: both;
+}
+section p {
+   margin: 1em 0;
+}
+.eventdate {
+   margin: 0 0 1em;
+   font-family: Bitter, "Times New Roman", Times, serif;
+}
+figure {
+   float: right;
+}
+}/* fieldset styles */
+fieldset {
+   padding: 0 2% 1em;
+}
+legend {
+   font-size: 1em;
+   font-weight: bold;
+   font-family: Verdana, Geneva, sans-serif;
+}
+fieldset span {
+   color: red;
+}
+
+/* field styles */
+input, textarea {
+   border: 1px solid #ccc;
+   margin-bottom: 0.2em;
+   font-size: 1em;
+}
+.text input {
+   max-width: 15em;
+   position: absolute;
+   left: 4em;
+}
+#city {
+   max-width: 8em;
+}
+#state {
+   max-width: 3em;
+}
+#zip {
+   max-width: 5em;
+}
+#source {
+   font-size: 1em;
+}
+
+#signup {
+   padding: 0.2em;
+   border: 3px solid black;
+   font-size: 1.2em;
+   border-radius: 10px;
+   background-color: rgb(246,224,65);
+}
+/* label styles */
+label {
+   font-size: 1.2em;
+}
+.text label {
+   display: block;
+   position: relative;
+   margin-bottom: 0.4em;
+}
+.checks label {
+   margin-right: 1em;
+}
+#source-label, #start-label {
+   position: absolute;
+   left: -10000px;
+}
+
+/* footer section */
+footer {
+   padding: 0.6em;
+   background-color: #A9A9A9;
+   color:  black;
+   text-align: center;
+}
+
+/* print styles */
+@media print {
+   body, h1, article, footer {
+      color: rgb(0,0,0);
+      background: rgb(255,255,255);
+   }
+   body {
+      max-width: 100%;
+   }
+   nav {
+      display: none;
+   }
+}
+@page {
+   margin: 0.75in;
+}
